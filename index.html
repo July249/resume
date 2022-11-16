@@ -18,218 +18,158 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script> -->
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <script src="./src/js/main.js" defer></script>
   </head>
 
   <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div class="navbar__logo">
-        <img src="./img/jibro_icon.png" alt="" />
-        <a href="#">JIBRO</a>
-      </div>
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item" data-link="#home" data-filter="#home">
-          Home
-        </li>
-        <li class="navbar__menu__item" data-link="#about" data-filter="#about">
-          About
-        </li>
-        <li
-          class="navbar__menu__item"
-          data-link="#skills"
-          data-filter="#skills"
-        >
-          Skills
-        </li>
-        <li class="navbar__menu__item" data-link="#work" data-filter="#work">
-          My work
-        </li>
-        <li
-          class="navbar__menu__item"
-          data-link="#experience"
-          data-filter="#experience"
-        >
-          Experience
-        </li>
-        <li
-          class="navbar__menu__item"
-          data-link="#education"
-          data-filter="#education"
-        >
-          Education
-        </li>
-        <li
-          class="navbar__menu__item"
-          data-link="#contact"
-          data-filter="#contact"
-        >
-          Contact
-        </li>
-      </ul>
+    <article id="content-container">
+      <!-- header -->
+      <header id="header">
+        <h1 class="tit">이지형 | JIBRO (Jihyung Lee)</h1>
+        <p><strong>💻 Front-End software engineer</strong></p>
+        <div class="underline"></div>
+      </header>
 
-      <!-- Toggle button -->
-      <button class="navbar__toggle-btn">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </nav>
+      <!-- navbar -->
+      <!-- sidebar로 변경해서 스크롤 작동시 왼쪽에서 나타나게 하는 것이 어떨까? -->
+      <nav id="navbar">
+        <!-- <a href="#">JIBRO</a>
+  <ul class="menu">
+    <li class="menu-item" data-link="#about" data-filter="#about">About</li>
+    <li class="menu-item" data-link="#projects" data-filter="#projects">
+      Projects
+    </li>
+    <li class="menu-item" data-link="#skills" data-filter="#skills">
+      Skills
+    </li>
+    <li class="menu-item" data-link="#experience" data-filter="#experience">
+      Experience
+    </li>
+    <li class="menu-item" data-link="#education" data-filter="#education">
+      Education
+    </li>
+    <li class="menu-item" data-link="#contact" data-filter="#contact">
+      Contact
+    </li>
+  </ul> -->
 
-    <!-- About -->
-    <section id="about">
-      <h1>📢 About Me</h1>
-      <div class="about__container">
-        <img
-          src="./img/jibro-about-image.jpeg"
-          alt="Jibro's profile photo"
-          class="about__avatar"
-        />
-        <div class="about__intro">
-          <h2 class="about__intro-title">
-            👨‍💻배우고<br />
-            📝익히고<br />
-            🧑‍🏫나누는<br />
-            프론트엔드 개발자, 이지형입니다!
-          </h2>
-          <section class="about__intro-desc">
-            <p>
-              <strong>필요한 기술을 배우는데 주저함이 없습니다.</strong>
-              개인 블로그 서버를 만들기 위해 Node.js, Firebase를 배웠습니다.
-            </p>
-            <p>
-              <strong>이해한 기술을 바로 응용합니다.</strong>
-              배운 것들을 토대로 영화 소개 웹 제작 팀 프로젝트 등 다양한 토이
-              프로젝트를 진행하였습니다.
-            </p>
-            <p>
-              <strong
-                >제가 이해한 것들을 바탕으로 주변 개발자들과 나눕니다.</strong
-              >
-              오픈소스 공헌 및 오프라인 스터디, 팀 프로젝트를 통하여 서로 배움을
-              나누는 성장 경험을 하였습니다.
-            </p>
-          </section>
-        </div>
-        <button class="about__contact" data-link="#contact">📞Contact</button>
-      </div>
-    </section>
+        <!-- Toggle button -->
+        <!-- <button class="toggle-btn">
+    <i class="fa-solid fa-bars"></i>
+  </button> -->
+      </nav>
 
-    <!-- skills -->
-    <section id="skills" class="section">
-      <div class="section__container">
-        <h2>Skills</h2>
-        <div class="skillset">
-          <h3 class="skillset__title">Skills</h3>
-          <div class="skill">
-            <div class="skill_description">
-              <span>HTML</span>
+      <main id="main">
+        <!-- Intro -->
+        <section id="intro">
+          <h2 class="sub-tit">👋 Profile</h2>
+          <div class="profile-container">
+            <img src="./img/jibro-about-image.jpeg" alt="" />
+            <div class="contacts_and_channels">
+              <div class="contacts">
+                <h3>Contacts</h3>
+                <ul class="contacts-items">
+                  <li>
+                    <a href="mailto:easyshiny724@gmail.com"
+                      >✉️ <strong>email</strong><br />easyshiny724@gmail.com</a
+                    >
+                  </li>
+                  <li>
+                    <a href="tel:01042075235"
+                      >📞 <strong>Tel</strong><br />010-1234-5678</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="channels">
+                <h3>Channels</h3>
+                <ul class="channels-items">
+                  <li class="channels-link">
+                    <a
+                      href="https://july249.tistory.com/"
+                      target="_blank"
+                      title="링크를 클릭해보세요."
+                      >📖 <strong>Blog</strong
+                      ><br />https://july249.tistory.com/</a
+                    >
+                  </li>
+                  <li class="channels-link">
+                    <a
+                      href="https://github.com/July249"
+                      target="_blank"
+                      title="링크를 클릭해보세요."
+                    >
+                      <i class="fab fa-github"></i>
+                      <strong>GitHub</strong><br />
+                      https://github.com/July249
+                    </a>
+                  </li>
+                  <li class="channels-link">
+                    <a
+                      href="https://www.linkedin.com/in/jihyung-lee-871a09150/"
+                      target="_blank"
+                      title="아이콘을 클릭해보세요."
+                    >
+                      <i class="fa-brands fa-linkedin"></i>
+                      <strong>LinkedIn</strong><br />
+                      https://www.linkedin.com/in/jihyung-lee/
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="skill">
-            <div class="skill_description">
-              <span>CSS</span>
-            </div>
+        </section>
+
+        <div class="underline"></div>
+
+        <!-- About -->
+        <section id="about">
+          <h2 class="sub-tit">📢 About Me</h2>
+          <div class="module about-container">
+            <h3 class="greeting">
+              안녕하세요~👋 지식을 나누어 성장하는 개발자 "이지형" 입니다!
+            </h3>
           </div>
-          <div class="skill">
-            <div class="skill_description">
-              <span>Sass</span>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill_description">
-              <span>TailwindCSS</span>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill_description">
-              <span>chart.js</span>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill_description">
-              <span>D3</span>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill_description">
-              <span>canvas</span>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill_description">
-              <span>three.js</span>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill_description">
-              <span>SVG</span>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill_description">
-              <span>JavaScript</span>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill_description">
-              <span>Bootstrap</span>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill_description">
-              <span>jQuery</span>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill_description">
-              <span>React</span>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill_description">
-              <span>Redux</span>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill_description">
-              <span>MySQL</span>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill_description">
-              <span>Node.js</span>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill_description">
-              <span>express.js</span>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill_description">
-              <span>Firebase</span>
-            </div>
-          </div>
-          <h3 class="skillset__title">Environments</h3>
-          <ul class="devenv__list">
-            <li><span>Visual Studio</span></li>
-            <li><span>Yarn</span></li>
-            <li><span>NPM</span></li>
-            <li><span>Netlify</span></li>
-            <li><span>GitHub</span></li>
-            <li><span>MongoDB</span></li>
-            <li><span></span></li>
-          </ul>
-          <h3 class="skillset__title">DevOps</h3>
-          <ul class="devops__list">
-            <li><span>git</span></li>
-            <li><span>Discord</span></li>
-            <li><span>Notion</span></li>
-            <li><span>Figma</span></li>
-            <li><span></span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+          <h2 class="sub-tit">🖼️ Projects</h2>
+          <div class="module projects-container"></div>
+
+          <div class="underline"></div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience">
+          <h2 class="sub-tit">🏢 Experience</h2>
+          <div class="module"></div>
+        </section>
+
+        <!-- Other Experience -->
+        <section id="other-experience">
+          <h2 class="sub-tit">👨‍💻 Other Experience</h2>
+          <div class="module"></div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+          <h2 class="sub-tit">🎨 Skills</h2>
+          <div class="module"></div>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+          <h2 class="sub-tit">👨‍💻 Education</h2>
+          <div class="module"></div>
+        </section>
+      </main>
+      <footer id="footer">
+        <p class="rights">&copy 2022 Jihyung Lee - All rights reserved</p>
+      </footer>
+    </article>
   </body>
 </html>
