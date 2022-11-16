@@ -11,7 +11,7 @@
   --clr-gray: #616161;
   --clr-light-gray: #7c7979;
   --clr-blue: #73aace;
-  --clr-yellow: #fcff63;
+  --clr-light-pink: #f599d9;
   --clr-light-orange: #ffefe3;
   --clr-orange: #feb546;
   --clr-black: #000000;
@@ -243,7 +243,6 @@ strong {
 }
 
 .about-container .desc-items li {
-  list-style: disc;
   margin: 2rem 3rem;
 }
 
@@ -252,6 +251,71 @@ strong {
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
+}
+
+.projects-container {
+  padding: 5px 0;
+}
+
+.projects-container .project-unit {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.project-unit .project-thumbnail {
+  width: 22rem;
+}
+
+.project-unit .project-used-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.project-unit .project-used-skills p {
+  margin-right: 1rem;
+  padding: 0.6rem;
+  border-radius: 6px;
+  background-color: var(--clr-light-pink);
+  font-weight: var(--weight-semi-bold);
+  font-size: var(--font-small);
+  color: var(--clr-white);
+}
+
+.project-unit .project-id {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-unit .project-tit {
+  margin-right: 2rem;
+  font-weight: var(--weight-bold);
+  font-size: var(--font-large);
+  line-height: 1.2;
+}
+
+.project-unit .solo_or_team {
+  display: inline-block;
+  padding: 0.6rem;
+  text-align: center;
+  border-radius: 6px;
+  background-color: var(--clr-orange);
+  line-height: 1.6;
+  font-weight: var(--weight-semi-bold);
+  font-size: var(--font-small);
+  color: var(--clr-black);
+}
+
+.project-unit .project-timeline {
+  margin-left: 0.4rem;
+  margin-bottom: 1.8rem;
+}
+
+.project-unit .project-details li {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Experience */
