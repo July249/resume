@@ -233,6 +233,20 @@ strong {
   flex-direction: column;
 }
 
+.about-container {
+  padding: 5px 0;
+}
+
+.about-container .greeting {
+  margin-left: 3rem;
+  font-weight: var(--weight-semi-bold);
+}
+
+.about-container .desc-items li {
+  list-style: disc;
+  margin: 2rem 3rem;
+}
+
 /* Projects */
 #projects {
   margin-bottom: 30px;
