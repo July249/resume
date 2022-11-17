@@ -89,6 +89,7 @@ strong {
   height: 1px;
   margin: 13px 0;
   border: 1px solid var(--clr-light-white);
+  background-color: var(--clr-light-white);
 }
 
 .sub-tit {
@@ -187,7 +188,7 @@ strong {
 .profile-container {
   padding: 5px 0;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
   gap: 6rem;
   align-items: center;
 }
@@ -259,13 +260,14 @@ strong {
 
 .projects-container .project-unit {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
   gap: 6rem;
   align-items: center;
 }
 
 .project-unit .project-thumbnail {
   width: 22rem;
+  border-radius: 6px;
 }
 
 .project-unit .project-used-skills {
@@ -275,7 +277,7 @@ strong {
 }
 
 .project-unit .project-used-skills p {
-  margin-right: 1rem;
+  margin: 0.6rem 0.4rem;
   padding: 0.6rem;
   border-radius: 6px;
   background-color: var(--clr-light-pink);
@@ -284,12 +286,25 @@ strong {
   color: var(--clr-white);
 }
 
-.project-unit .project-id {
+.project-unit .project-link,
+.other-experience-unit .other-experience-link {
+  margin-top: 1.6rem;
+  display: block;
+  text-align: end;
+  font-size: var(--font-small);
+  font-weight: var(--weight-semi-bold);
+  color: var(--clr-blue);
+  text-decoration: underline;
+}
+
+.project-unit .project-id,
+.other-experience-unit .other-experience-id {
   display: flex;
   flex-direction: row;
 }
 
-.project-unit .project-tit {
+.project-unit .project-tit,
+.other-experience-unit .other-experience-tit {
   margin-right: 2rem;
   font-weight: var(--weight-bold);
   font-size: var(--font-large);
@@ -308,14 +323,18 @@ strong {
   color: var(--clr-black);
 }
 
-.project-unit .project-timeline {
+.project-unit .project-period,
+.other-experience-unit .other-experience-period {
   margin-left: 0.4rem;
   margin-bottom: 1.8rem;
 }
 
-.project-unit .project-details li {
+.project-unit .project-details li,
+.other-experience-unit .other-experience-details li {
   margin-left: 2rem;
   margin-bottom: 2rem;
+  font-size: var(--font-small);
+  line-height: 1.4;
 }
 
 /* Experience */
@@ -325,11 +344,49 @@ strong {
   flex-direction: column;
 }
 
+.experience-container {
+  padding: 5px 0;
+}
+
+.experience-container .experience-unit {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 6rem;
+}
+
+.experience-unit .experience-intro {
+  width: 22rem;
+  margin-left: 2rem;
+}
+
+.experience-unit .job-id {
+  margin-bottom: 3rem;
+}
+
+.experience-unit .job-id .job-company {
+  margin-bottom: 2rem;
+  font-weight: var(--weight-semi-bold);
+}
+
+.experience-unit .job-id .job-period {
+  line-height: 1.4;
+}
+
+.experience-unit .job-desc .job-role {
+  margin-bottom: 2rem;
+  font-weight: var(--weight-semi-bold);
+}
+
 /* Other Experience */
 #other-experience {
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
+}
+
+.other-experience-container .other-experience-unit {
+  display: block;
+  margin-left: 2em;
 }
 
 /* Skills */
