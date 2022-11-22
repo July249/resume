@@ -213,13 +213,9 @@ strong {
 }
 
 .contacts .contacts-items li,
-.contacts .channels-items li {
+.channels .channels-items li {
   font-size: var(--font-small);
   margin-bottom: 1rem;
-}
-
-.channels-items .channels-link {
-  margin-top: 1.4rem;
 }
 
 .channels-items .channels-link a {
