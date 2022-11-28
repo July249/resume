@@ -388,10 +388,11 @@ strong {
 }
 
 .other-experience-unit .other-experience-period {
+  width: 159px;
   margin-top: 1.6rem;
-  margin-right: auto;
+  margin-left: auto;
   display: block;
-  text-align: end;
+  text-align: start;
   font-size: var(--font-small);
   font-weight: var(--weight-regular);
 }
@@ -470,6 +471,7 @@ strong {
 .education-unit .education-id {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .education-unit .education-tit {
@@ -481,9 +483,9 @@ strong {
 
 .education-unit .education-period {
   margin-top: 1.6rem;
-  margin-right: auto;
+  margin-left: auto;
   display: block;
-  text-align: end;
+  text-align: start;
   font-size: var(--font-small);
   font-weight: var(--weight-regular);
 }
