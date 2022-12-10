@@ -25,40 +25,54 @@
 
   <body>
     <article id="content-container">
+      <!-- navbar -->
+      <nav id="navbar">
+        <div class="navbar-container">
+          <a href="#">JIBRO</a>
+          <ul class="menu">
+            <li class="menu-item" data-link="#about" data-filter="#about">
+              About
+            </li>
+            <li class="menu-item" data-link="#projects" data-filter="#projects">
+              Projects
+            </li>
+            <li class="menu-item" data-link="#skills" data-filter="#skills">
+              Skills
+            </li>
+            <li
+              class="menu-item"
+              data-link="#other-experience"
+              data-filter="#other-experience"
+            >
+              Other Experience
+            </li>
+            <li
+              class="menu-item"
+              data-link="#experience"
+              data-filter="#experience"
+            >
+              Work Experience
+            </li>
+            <li
+              class="menu-item"
+              data-link="#education"
+              data-filter="#education"
+            >
+              Education
+            </li>
+          </ul>
+
+          <!-- Toggle button -->
+          <button class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
       <!-- header -->
       <header id="header">
         <h1 class="tit">이지형 | JIBRO (Jihyung Lee)</h1>
         <p><strong>💻 Front-End software engineer</strong></p>
       </header>
-
-      <!-- navbar -->
-      <!-- sidebar로 변경해서 스크롤 작동시 왼쪽에서 나타나게 하는 것이 어떨까? -->
-      <nav id="navbar">
-        <!-- <a href="#">JIBRO</a>
-            <ul class="menu">
-              <li class="menu-item" data-link="#about" data-filter="#about">About</li>
-              <li class="menu-item" data-link="#projects" data-filter="#projects">
-                Projects
-              </li>
-              <li class="menu-item" data-link="#skills" data-filter="#skills">
-                Skills
-              </li>
-              <li class="menu-item" data-link="#experience" data-filter="#experience">
-                Experience
-              </li>
-              <li class="menu-item" data-link="#education" data-filter="#education">
-                Education
-              </li>
-              <li class="menu-item" data-link="#contact" data-filter="#contact">
-                Contact
-              </li>
-            </ul> -->
-
-        <!-- Toggle button -->
-        <!-- <button class="toggle-btn">
-                <i class="fa-solid fa-bars"></i>
-              </button> -->
-      </nav>
 
       <main id="main">
         <!-- Intro -->
@@ -901,5 +915,8 @@
         <p class="rights">&copy 2022 Jihyung Lee - All rights reserved</p>
       </footer>
     </article>
+    <button class="up-btn">
+      <i class="fas fa-arrow-up" data-link="#header"></i>
+    </button>
   </body>
 </html>
