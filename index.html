@@ -35,29 +35,29 @@
       <!-- sidebar로 변경해서 스크롤 작동시 왼쪽에서 나타나게 하는 것이 어떨까? -->
       <nav id="navbar">
         <!-- <a href="#">JIBRO</a>
-  <ul class="menu">
-    <li class="menu-item" data-link="#about" data-filter="#about">About</li>
-    <li class="menu-item" data-link="#projects" data-filter="#projects">
-      Projects
-    </li>
-    <li class="menu-item" data-link="#skills" data-filter="#skills">
-      Skills
-    </li>
-    <li class="menu-item" data-link="#experience" data-filter="#experience">
-      Experience
-    </li>
-    <li class="menu-item" data-link="#education" data-filter="#education">
-      Education
-    </li>
-    <li class="menu-item" data-link="#contact" data-filter="#contact">
-      Contact
-    </li>
-  </ul> -->
+            <ul class="menu">
+              <li class="menu-item" data-link="#about" data-filter="#about">About</li>
+              <li class="menu-item" data-link="#projects" data-filter="#projects">
+                Projects
+              </li>
+              <li class="menu-item" data-link="#skills" data-filter="#skills">
+                Skills
+              </li>
+              <li class="menu-item" data-link="#experience" data-filter="#experience">
+                Experience
+              </li>
+              <li class="menu-item" data-link="#education" data-filter="#education">
+                Education
+              </li>
+              <li class="menu-item" data-link="#contact" data-filter="#contact">
+                Contact
+              </li>
+            </ul> -->
 
         <!-- Toggle button -->
         <!-- <button class="toggle-btn">
-    <i class="fa-solid fa-bars"></i>
-  </button> -->
+                <i class="fa-solid fa-bars"></i>
+              </button> -->
       </nav>
 
       <main id="main">
@@ -185,14 +185,14 @@
                 <p class="solo_or_team">팀 프로젝트</p>
                 <a
                   class="project-link"
-                  href="https://github.com/July249"
+                  href="https://github.com/July249/AnimalTalk"
                   target="_blank"
                   title="링크"
                   >자세히 보기</a
                 >
                 <p class="project-period">
-                  <time datetime="2022-11-30">2022.12.03</time> ~
-                  <time datetime="2022-12-30">2023.01.04</time>
+                  <time datetime="2022-12-03">2022.12.03</time> ~
+                  <time datetime=""></time>
                 </p>
               </div>
               <div class="project-used-skills">
@@ -201,7 +201,10 @@
               </div>
               <ul class="project-details">
                 <li>
-                  <p>React Context API를 이용한 상태관리를 진행하였습니다.</p>
+                  <p>
+                    React Context API를 이용하여 사용자 정보에 대한 상태관리를
+                    진행하였습니다.
+                  </p>
                 </li>
                 <li>
                   <p>
@@ -209,9 +212,25 @@
                     간소화하였습니다.
                   </p>
                 </li>
-                <!-- <li>
-                  <p></p>
-                </li> -->
+                <li>
+                  <p>
+                    사용자의 자동 로그인을 위해 JWT를 session storage에 담아
+                    관리하였습니다.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    공통 스타일을 관리하기 위하여 style.js를 이용하여 중복되는
+                    스타일을 한 곳에 모아 관리하였습니다.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    사용되는 이미지 사용의 용이성을 위하여 public 폴더에 담아
+                    process.env.PUBLIC_URL을 통한 경로 참조 방식을
+                    사용하였습니다.
+                  </p>
+                </li>
               </ul>
             </div>
 
@@ -229,8 +248,8 @@
                   >자세히 보기</a
                 >
                 <p class="project-period">
-                  <time datetime="2022-11-30">2022.11.23</time> ~
-                  <time datetime="2022-12-30">2022.12.02</time>
+                  <time datetime="2022-11-23">2022.11.23</time> ~
+                  <time datetime=""></time>
                 </p>
               </div>
               <div class="project-used-skills">
@@ -250,7 +269,9 @@
                 </li>
                 <li>
                   <p>
-                    깜박임 현상을 제거하기 위해 useLayoutEffect를 사용하였음
+                    한번에 많은 데이터를 불러와 CSR 과정에서 발생할 수 있는
+                    delay 문제를 제거하기 위해 스크롤 이벤트가 발생하기 이전에는
+                    추가 데이터 로딩을 진행하지 않도록 하였습니다.
                   </p>
                 </li>
               </ul>
@@ -264,7 +285,7 @@
                 <p class="solo_or_team">개인 프로젝트</p>
                 <a
                   class="project-link"
-                  href="https://github.com/July249"
+                  href="https://github.com/July249/todo-app"
                   target="_blank"
                   title="GitHub Link"
                   >자세히 보기</a
@@ -279,7 +300,6 @@
                 <p>CSS</p>
                 <p>JavaScript</p>
               </div>
-
               <ul class="project-details">
                 <li>
                   <p>
@@ -295,16 +315,24 @@
                 </li>
                 <li>
                   <p>
-                    일자를 선택하면 모달 창에서 저장된 일정을 확인할 수 있음
+                    일자를 선택하면 모달 창에서 저장된 일정을 확인할 수
+                    있습니다.
                   </p>
                 </li>
                 <li>
-                  <p>달력의 하단에는 오늘의 일정이 나타남</p>
+                  <p>달력의 하단에는 오늘의 일정이 나타나게 됩니다.</p>
                 </li>
                 <li>
                   <p>
                     설정한 일정 하루 전에 사용자의 이메일로 할 일의 목록을
-                    발송해줌
+                    발송해주는 기능을 제공할 예정입니다.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    데이터를 입력한지 12시간이 지나면 로컬스토리지에 저장된
+                    데이터를 JSON 파일에 저장한 뒤, 로컬스토리지에 저장된
+                    데이터를 제거하는 기능을 추가할 예정입니다.
                   </p>
                 </li>
               </ul>
@@ -318,37 +346,31 @@
                 <p class="solo_or_team">개인 프로젝트</p>
                 <a
                   class="project-link"
-                  href="https://github.com/July249"
+                  href="https://github.com/July249/time-timer"
                   target="_blank"
                   title="GitHub Link"
                   >자세히 보기</a
                 >
                 <p class="project-period">
                   <time datetime="2022-11-30">2022.11.30</time> ~
-                  <time datetime="2022-12-30">2022.12.08</time>
+                  <time datetime=""></time>
                 </p>
               </div>
               <div class="project-used-skills">
                 <p>HTML</p>
                 <p>CSS</p>
                 <p>JavaScript</p>
+                <p>React</p>
               </div>
               <ul class="project-details">
                 <li>
-                  <p>
-                    기본적인 Start, Pause, Reset 기능을 탑재한 타이머 입니다.
-                  </p>
+                  <p>기본적인 카운트다운 기능을 가진 타이머 입니다.</p>
                 </li>
                 <li>
                   <p>
-                    각 버튼에 이벤트가 발생하였을 때, 동작하는 함수의 기능이
-                    다양하여 코드의 재사용성 및 관리에 어려움이 있었습니다.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    이를 해결하기 위한 방법으로 단일책임의 원칙(SRP)을
-                    차용하였습니다.
+                    하나의 함수에서 다양한 기능을 수행하여 관리의 어려움이
+                    있었습니다. 이를 해결하기 위한 방법으로 단일책임의
+                    원칙(SRP)을 차용하였습니다.
                   </p>
                 </li>
                 <li>
@@ -364,6 +386,13 @@
                     차용하는 것이 용이하였으나, 복잡도가 높은 (하나의 이벤트에서
                     처리해야할 기능이 많아지는) 경우에는 SRP 방법론의 적용이
                     어려울 수 있음을 고려해야함을 알게 되었습니다.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    바닐라 자바스크립트로 구현한 이 프로젝트를 리액트로 변경하여
+                    함수형 컴포넌트의 상태관리가 주는 편의성을 확인하고자
+                    합니다.
                   </p>
                 </li>
               </ul>
@@ -383,13 +412,14 @@
                   >자세히 보기</a
                 >
                 <p class="project-period">
-                  <time datetime="2022-11-30">2022.11.07</time> ~
+                  <time datetime="2022-11-07">2022.11.07</time> ~
                   <time datetime=""></time>
                 </p>
               </div>
               <div class="project-used-skills">
                 <p>HTML</p>
                 <p>CSS</p>
+                <p>Sass</p>
                 <p>JavaScript</p>
               </div>
               <ul class="project-details">
@@ -426,227 +456,18 @@
                 </li>
                 <li>
                   <p>
-                    네이버 openAPI 정보를 가져오기 위해 request 모듈을
-                    사용하였습니다.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    CORS 에러를 해결하기 위해 네이버 openAPI 정보 요청시 id와
-                    key 정보와 함께 요청하였고, Origin을 네이버 개발자센터에
-                    등록하였습니다.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <!-- Other Experience -->
-        <section id="other-experience" class="section">
-          <h2 class="sub-tit">👨‍💻 Other Experience</h2>
-          <div class="container">
-            <div class="other-experience-unit">
-              <div class="other-experience-id">
-                <h3 class="other-experience-tit">MDN 오픈소스 기여 활동</h3>
-                <a
-                  class="other-experience-link"
-                  href="https://github.com/mdn/translated-content/pull/9569"
-                  target="_blank"
-                  title="링크"
-                  >자세히 보기</a
-                >
-                <p class="other-experience-period">
-                  <time datetime="2022-12-03">2022.10.29</time> ~
-                  <time datetime=""></time>
-                </p>
-              </div>
-              <ul class="other-experience-details">
-                <li>
-                  <p>
-                    <a
-                      href="https://github.com/mdn/translated-content/pull/9569"
-                      style="color: #73aace; text-decoration: underline"
-                      >display-box none</a
-                    >
-                    번역 작업 진행
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <a
-                      href="https://github.com/mdn/translated-content/pull/10119"
-                      style="color: #73aace; text-decoration: underline"
-                      >aria-label</a
-                    >
-                    번역 작업 진행 (2022.11.24)
+                    네이버 openAPI는 브라우저 환경에서 데이터를 요청하는 fetch
+                    방식의 요청을 허용하지 않는 문제점이 있었습니다. 이를
+                    해결하기 위해 노드환경에서 request 모듈을 사용하였습니다.
+                    request 모듈을 통해 가져온 데이터를 json 파일로 저장한 뒤,
+                    해당 json 파일에 fetch로 접근하는 간접적인 방식을 차용하려고
+                    하였지만, API 접근 정보를 은닉하는 과정과 노드환경을
+                    브라우저 환경과 일치시키는 과정에서 문제가 발생하였습니다.
+                    위 문제를 해결하기 위해 웹팩을 활용한 API 접근정보 은닉화 및
+                    프록시를 이용한 접근을 고려하여 문제를 해결하였습니다.
                   </p>
                 </li>
               </ul>
-            </div>
-
-            <div class="underline"></div>
-
-            <div class="other-experience-unit">
-              <div class="other-experience-id">
-                <h3 class="other-experience-tit">React Hook 책 집필</h3>
-                <a
-                  class="other-experience-link"
-                  href=""
-                  target="_blank"
-                  title=""
-                  >자세히 보기</a
-                >
-                <p class="other-experience-period">
-                  <time datetime="2022-12-03">2022.12.03</time> ~
-                  <time datetime="2023-02-28">2023.02.28</time>
-                </p>
-              </div>
-
-              <ul class="other-experience-details">
-                <li>
-                  <p>
-                    aliquid necessitatibus architecto, saepe dolorem earum.
-                    Dolore dolorem animi unde minima ea adipisci repellendus!
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Similique, architecto?
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    inventore cumque eos dolores natus iusto quibusdam nemo
-                    consectetur esse, expedita harum autem sit assumenda vel id
-                    dignissimos?
-                  </p>
-                </li>
-              </ul>
-            </div>
-
-            <div class="underline"></div>
-
-            <div class="other-experience-unit">
-              <div class="other-experience-id">
-                <h3 class="other-experience-tit">
-                  WEB SQL 오픈소스 사이트 개발
-                </h3>
-                <a
-                  class="other-experience-link"
-                  href=""
-                  target="_blank"
-                  title=""
-                  >자세히 보기</a
-                >
-                <p class="other-experience-period">
-                  <time datetime="2022-12-03">2022.12.03</time> ~
-                  <time datetime="2023-02-28">2023.02.28</time>
-                </p>
-              </div>
-
-              <ul class="other-experience-details">
-                <li>
-                  <p>
-                    aliquid necessitatibus architecto, saepe dolorem earum.
-                    Dolore dolorem animi unde minima ea adipisci repellendus!
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Similique, architecto?
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    inventore cumque eos dolores natus iusto quibusdam nemo
-                    consectetur esse, expedita harum autem sit assumenda vel id
-                    dignissimos?
-                  </p>
-                </li>
-              </ul>
-            </div>
-
-            <div class="underline"></div>
-
-            <div class="other-experience-unit">
-              <div class="other-experience-id">
-                <h3 class="other-experience-tit">스자일(코어자바스크립트)</h3>
-                <a
-                  class="other-experience-link"
-                  href="https://www.notion.so/likelion/1667021132e84c10bd4ddbf4263d3b95"
-                  target="_blank"
-                  title="스자일 노션페이지 링크"
-                  >자세히 보기</a
-                >
-                <p class="other-experience-period">
-                  <time datetime="2022-09-19">2022.09.19</time> ~
-                  <time datetime="2022-10-04">2022.10.04</time>
-                </p>
-              </div>
-
-              <ul class="other-experience-details">
-                <li>
-                  <p>
-                    aliquid necessitatibus architecto, saepe dolorem earum.
-                    Dolore dolorem animi unde minima ea adipisci repellendus!
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Similique, architecto?
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    inventore cumque eos dolores natus iusto quibusdam nemo
-                    consectetur esse, expedita harum autem sit assumenda vel id
-                    dignissimos?
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <!-- Experience -->
-        <section id="experience" class="section">
-          <h2 class="sub-tit">💼 Work Experience</h2>
-          <div class="container">
-            <div class="experience-unit">
-              <div class="experience-intro">
-                <div class="job-id">
-                  <h3 class="job-company">(주) 이지일렉트릭</h3>
-                  <p class="job-period">
-                    <time datetime="2021-06-01">2021.06.01</time> ~<br />
-                    <time datetime="2021-11-30">2021.11.30</time>
-                  </p>
-                </div>
-                <p class="job-major">기업 부설 연구소장</p>
-                <p class="job-major">경영전략팀장</p>
-                <p class="job-major">콘텐츠제작팀원</p>
-              </div>
-              <div class="job-desc">
-                <h3 class="job-role">👨‍💻 업무 경험</h3>
-                <ul class="job-details">
-                  <li>
-                    <p>LaTeX를 이용한 웹서비스 상품 서비스 콘텐츠 제작</p>
-                  </li>
-                  <li>
-                    <p>GDN을 활용한 홍보 및 마케팅 담당 업무</p>
-                  </li>
-                  <li>
-                    <div>
-                      국가지원사업 관리 담당 업무<br />
-                      <p>- 콘텐츠진흥원 주관 창업발전소 업무 총괄</p>
-                      <p>- e나라도움 업무 진행</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </section>
@@ -728,7 +549,7 @@
                   <img
                     src="./src/assets/img/skills/dev_skill/firebase.svg"
                     alt=""
-                  />Firebase.js
+                  />Firebase
                 </button>
               </div>
             </div>
@@ -780,6 +601,190 @@
                     alt=""
                   />Notion
                 </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Other Experience -->
+        <section id="other-experience" class="section">
+          <h2 class="sub-tit">👨‍💻 Other Experience</h2>
+          <div class="container">
+            <div class="other-experience-unit">
+              <div class="other-experience-id">
+                <h3 class="other-experience-tit">MDN 오픈소스 기여 활동</h3>
+                <a
+                  class="other-experience-link"
+                  href="https://github.com/mdn/translated-content/labels/l10n-ko"
+                  target="_blank"
+                  title="링크"
+                  >자세히 보기</a
+                >
+                <p class="other-experience-period">
+                  <time datetime="2022-12-03">2022.10.29</time> ~
+                  <time datetime=""></time>
+                </p>
+              </div>
+              <ul class="other-experience-details">
+                <li>
+                  <p>
+                    <a
+                      href="https://github.com/mdn/translated-content/pull/9569"
+                      style="color: #73aace; text-decoration: underline"
+                      >display-box none</a
+                    >
+                    번역 작업 진행 (2022.10.29)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a
+                      href="https://github.com/mdn/translated-content/pull/10119"
+                      style="color: #73aace; text-decoration: underline"
+                      >aria-label</a
+                    >
+                    번역 작업 진행 (2022.11.24)
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="underline"></div>
+
+            <div class="other-experience-unit">
+              <div class="other-experience-id">
+                <h3 class="other-experience-tit">React, Hook 들어오네!?</h3>
+                <p class="other-experience-period">
+                  <time datetime="2022-12-03">2022.12.03</time> ~
+                  <time datetime="2023-02-28">2023.01.31</time>
+                </p>
+              </div>
+
+              <ul class="other-experience-details">
+                <li>
+                  <p>
+                    React Hook을 보다 쉽게 접할 수 있도록 하기 위한 공동 집필
+                    과정에 참여하였습니다.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    useEffect, useReducer, useDeferredValue 집필을
+                    진행하였습니다.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="underline"></div>
+
+            <div class="other-experience-unit">
+              <div class="other-experience-id">
+                <h3 class="other-experience-tit">
+                  WEB SQL 오픈소스 사이트 개발
+                </h3>
+                <a
+                  class="other-experience-link"
+                  href="https://github.com/websqldb/SQooL"
+                  target="_blank"
+                  title=""
+                  >자세히 보기</a
+                >
+                <p class="other-experience-period">
+                  <time datetime="2022-12-03">2022.12.03</time> ~
+                  <time datetime="2023-02-28">2023.02.28</time>
+                </p>
+              </div>
+
+              <ul class="other-experience-details">
+                <li>
+                  <p>
+                    별도의 설치 작업 없이 쉽게 웹에서 실행 가능한 SQL 튜토리얼
+                    사이트 제작에 참여하였습니다.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    데이터 처리 과정의 자바스크립트 기능 구현 작업, 웹에서
+                    사용되는 데이터 생성 작업에 참여하였습니다.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="underline"></div>
+
+            <div class="other-experience-unit">
+              <div class="other-experience-id">
+                <h3 class="other-experience-tit">
+                  스자일(코어자바스크립트 북스터디)
+                </h3>
+                <a
+                  class="other-experience-link"
+                  href="https://www.notion.so/likelion/1667021132e84c10bd4ddbf4263d3b95"
+                  target="_blank"
+                  title="스자일 노션페이지 링크"
+                  >자세히 보기</a
+                >
+                <p class="other-experience-period">
+                  <time datetime="2022-09-19">2022.09.19</time> ~
+                  <time datetime="2022-10-04">2022.10.04</time>
+                </p>
+              </div>
+
+              <ul class="other-experience-details">
+                <li>
+                  <p>
+                    코어자바스크립트 교재를 학습하여 버전에 관계 없이
+                    자바스크립트를 관통하는 부분에 대한 학습을 진행하는
+                    북스터디입니다.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    해당 북스터디에서 엑셀 데이터를 관리하는 역할을
+                    담당하였습니다.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="section">
+          <h2 class="sub-tit">💼 Work Experience</h2>
+          <div class="container">
+            <div class="experience-unit">
+              <div class="experience-intro">
+                <div class="job-id">
+                  <h3 class="job-company">(주) 이지일렉트릭</h3>
+                  <p class="job-period">
+                    <time datetime="2021-06-01">2021.06.01</time> ~<br />
+                    <time datetime="2021-11-30">2021.11.30</time>
+                  </p>
+                </div>
+                <p class="job-major">기업 부설 연구소장</p>
+                <p class="job-major">경영전략팀장</p>
+                <p class="job-major">콘텐츠제작팀원</p>
+              </div>
+              <div class="job-desc">
+                <h3 class="job-role">👨‍💻 업무 경험</h3>
+                <ul class="job-details">
+                  <li>
+                    <p>LaTeX를 이용한 웹서비스 상품 서비스 콘텐츠 제작</p>
+                  </li>
+                  <li>
+                    <p>GDN을 활용한 홍보 및 마케팅 담당 업무</p>
+                  </li>
+                  <li>
+                    <div>
+                      국가지원사업 관리 담당 업무<br />
+                      <p>- 콘텐츠진흥원 주관 창업발전소 업무 총괄</p>
+                      <p>- e나라도움 업무 진행</p>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -889,6 +894,9 @@
           </div>
         </section>
       </main>
+
+      <div class="underline"></div>
+
       <footer id="footer">
         <p class="rights">&copy 2022 Jihyung Lee - All rights reserved</p>
       </footer>
