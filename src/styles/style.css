@@ -322,32 +322,6 @@ strong {
   color: var(--clr-white);
 }
 
-/* other experience */
-
-/* experience */
-.experience-unit .experience-intro {
-  width: 22rem;
-  margin-left: 2rem;
-}
-
-.experience-unit .job-id {
-  margin-bottom: 3rem;
-}
-
-.experience-unit .job-id .job-company {
-  margin-bottom: 2rem;
-  font-weight: var(--weight-semi-bold);
-}
-
-.experience-unit .job-id .job-period {
-  line-height: 1.4;
-}
-
-.experience-unit .job-desc .job-role {
-  margin-bottom: 2rem;
-  font-weight: var(--weight-semi-bold);
-}
-
 /* skills */
 #skills .container {
   display: flex;
@@ -389,6 +363,32 @@ strong {
 .dev-etc-items img {
   width: 2rem;
   margin-right: 0.8rem;
+}
+
+/* other experience */
+
+/* experience */
+.experience-unit .experience-intro {
+  width: 22rem;
+  margin-left: 2rem;
+}
+
+.experience-unit .job-id {
+  margin-bottom: 3rem;
+}
+
+.experience-unit .job-id .job-company {
+  margin-bottom: 2rem;
+  font-weight: var(--weight-semi-bold);
+}
+
+.experience-unit .job-id .job-period {
+  line-height: 1.4;
+}
+
+.experience-unit .job-desc .job-role {
+  margin-bottom: 2rem;
+  font-weight: var(--weight-semi-bold);
 }
 
 /* education */
