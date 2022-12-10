@@ -12,8 +12,9 @@
   /* Font size */
   --font-xlarge: 3.2rem;
   --font-large: 2.6rem;
-  --font-regular: 2rem;
-  --font-small: 1.4rem;
+  --font-regular: 2.2rem;
+  --font-small: 1.8rem;
+  --font-xsmall: 1.4rem;
 
   /* Font weight */
   --weight-bold: 700;
@@ -71,6 +72,8 @@ p {
 }
 
 strong {
+  display: inline-block;
+  margin-bottom: 0.6rem;
   font-size: inherit;
   font-weight: var(--weight-bold);
   line-height: 1.8;
@@ -104,7 +107,7 @@ strong {
 
 /* Header */
 #header {
-  width: 71.4rem;
+  width: 82.4rem;
   padding-top: 8rem;
   margin: 0 auto;
 }
@@ -159,7 +162,7 @@ strong {
 }
 
 #main {
-  width: 71.4rem;
+  width: 82.4rem;
   margin: 0 auto;
 }
 
@@ -233,7 +236,7 @@ strong {
 .project-unit .project-period,
 .other-experience-unit .other-experience-period,
 .education-unit .education-period {
-  width: 15.9rem;
+  width: 21rem;
   margin-top: 1.6rem;
   margin-left: auto;
   display: block;
@@ -246,25 +249,25 @@ strong {
 #intro .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  gap: 5rem;
+  gap: 4rem;
   align-items: center;
 }
 
 #intro .container img {
-  width: 22rem;
-  height: 22rem;
+  width: 24rem;
+  height: 24rem;
   border-radius: 50%;
 }
 
 .contacts_and_channels {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.4rem;
+  gap: 1rem;
 }
 
 .contacts h3,
 .channels h3 {
-  font-size: var(--font-large);
+  font-size: var(--font-regular);
   font-weight: var(--weight-semi-bold);
   margin-bottom: 2rem;
 }
@@ -275,8 +278,9 @@ strong {
   margin-bottom: 1rem;
 }
 
+.contacts-items li a,
 .channels-items .channels-link a {
-  font-size: var(--font-small);
+  font-size: var(--font-xsmall);
   margin-right: 0.8rem;
 }
 
