@@ -1,922 +1,771 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JIBRO's Resume</title>
-    <meta name="description" content="Jibro's resume for software engineer" />
-    <meta name="author" content="Jibro" />
-    <link rel="icon" type="image/png" href="" />
-    <script
-      src="https://kit.fontawesome.com/a6bc574287.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./src/styles/reset.css" />
-    <link rel="stylesheet" href="./src/styles/style.css" />
-    <script src="./src/js/main.js" defer></script>
-  </head>
 
-  <body>
-    <article id="content-container">
-      <!-- navbar -->
-      <nav id="navbar">
-        <div class="navbar-container">
-          <a href="#">JIBRO</a>
-          <ul class="menu">
-            <li class="menu-item" data-link="#about" data-filter="#about">
-              About
-            </li>
-            <li class="menu-item" data-link="#projects" data-filter="#projects">
-              Projects
-            </li>
-            <li class="menu-item" data-link="#skills" data-filter="#skills">
-              Skills
-            </li>
-            <li
-              class="menu-item"
-              data-link="#other-experience"
-              data-filter="#other-experience"
-            >
-              Other Experience
-            </li>
-            <li
-              class="menu-item"
-              data-link="#experience"
-              data-filter="#experience"
-            >
-              Work Experience
-            </li>
-            <li
-              class="menu-item"
-              data-link="#education"
-              data-filter="#education"
-            >
-              Education
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JIBRO's Resume</title>
+  <meta name="description" content="Jibro's resume for software engineer" />
+  <meta name="author" content="Jibro" />
+  <link rel="icon" type="image/png" href="" />
+  <script src="https://kit.fontawesome.com/a6bc574287.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/styles/reset.css" />
+  <link rel="stylesheet" href="./src/styles/style.css" />
+  <script src="./src/js/main.js" defer></script>
+</head>
 
-          <!-- Toggle button -->
-          <button class="toggle-btn">
+<body>
+  <article id="content-container">
+    <!-- navbar -->
+    <nav id="navbar">
+      <div class="navbar-container">
+        <a href="#">JIBRO</a>
+        <ul class="menu">
+          <li class="menu-item" data-link="#about" data-filter="#about">
+            About
+          </li>
+          <li class="menu-item" data-link="#projects" data-filter="#projects">
+            Projects
+          </li>
+          <li class="menu-item" data-link="#skills" data-filter="#skills">
+            Skills
+          </li>
+          <li class="menu-item" data-link="#other-experience" data-filter="#other-experience">
+            Other Experience
+          </li>
+          <li class="menu-item" data-link="#experience" data-filter="#experience">
+            Work Experience
+          </li>
+          <li class="menu-item" data-link="#education" data-filter="#education">
+            Education
+          </li>
+        </ul>
+
+        <!-- Toggle button -->
+        <!-- <button class="toggle-btn">
             <i class="fa-solid fa-bars"></i>
-          </button>
-        </div>
-      </nav>
-      <!-- header -->
-      <header id="header">
-        <h1 class="tit">이지형 | JIBRO (Jihyung Lee)</h1>
-        <p><strong>💻 Front-End software engineer</strong></p>
-      </header>
+          </button> -->
+      </div>
+    </nav>
+    <!-- header -->
+    <header id="header">
+      <h1 class="tit">이지형 | JIBRO (Jihyung Lee)</h1>
+      <p><strong>💻 Front-End software engineer</strong></p>
+    </header>
 
-      <main id="main">
-        <!-- Intro -->
-        <section id="intro" class="section">
-          <h2 class="sub-tit">👋 Profile</h2>
-          <div class="container">
-            <img src="./src/assets/img/me/jibro-about-image.jpeg" alt="" />
-            <div class="contacts_and_channels">
-              <div class="contacts">
-                <h3>Contacts</h3>
-                <ul class="contacts-items">
-                  <li>
-                    <strong>✉️ email</strong><br />
-                    <a href="mailto:easyshiny724@gmail.com"
-                      >easyshiny724@gmail.com</a
-                    >
-                  </li>
-                  <li>
-                    <strong>📞 Tel</strong><br />
-                    <a href="tel:01042075235">010-1234-5678</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="channels">
-                <h3>Channels</h3>
-                <ul class="channels-items">
-                  <li class="channels-link">
-                    <strong>📖 Blog</strong><br />
-                    <a
-                      href="https://july249.tistory.com/"
-                      target="_blank"
-                      title="링크를 클릭해보세요."
-                      >https://july249.tistory.com/</a
-                    >
-                  </li>
-                  <li class="channels-link">
-                    <strong><i class="fab fa-github"></i>GitHub</strong><br />
-                    <a
-                      href="https://github.com/July249"
-                      target="_blank"
-                      title="링크를 클릭해보세요."
-                    >
-                      https://github.com/July249
-                    </a>
-                  </li>
-                  <li class="channels-link">
-                    <strong
-                      ><i class="fa-brands fa-linkedin"></i>LinkedIn</strong
-                    ><br />
-                    <a
-                      href="https://www.linkedin.com/in/jihyung-lee-871a09150/"
-                      target="_blank"
-                      title="아이콘을 클릭해보세요."
-                    >
-                      https://www.linkedin.com/in/jihyung-lee/
-                    </a>
-                  </li>
-                </ul>
-              </div>
+    <main id="main">
+      <!-- Intro -->
+      <section id="intro" class="section">
+        <h2 class="sub-tit">👋 Profile</h2>
+        <div class="container">
+          <img src="./src/assets/img/me/jibro-about-image.jpeg" alt="" />
+          <div class="contacts_and_channels">
+            <div class="contacts">
+              <h3>Contacts</h3>
+              <ul class="contacts-items">
+                <li>
+                  <strong>✉️ email</strong><br />
+                  <a href="mailto:easyshiny724@gmail.com">easyshiny724@gmail.com</a>
+                </li>
+                <li>
+                  <strong>📞 Tel</strong><br />
+                  <a href="tel:01042075235">010-1234-5678</a>
+                </li>
+              </ul>
+            </div>
+            <div class="channels">
+              <h3>Channels</h3>
+              <ul class="channels-items">
+                <li class="channels-link">
+                  <strong>📖 Blog</strong><br />
+                  <a href="https://july249.tistory.com/" target="_blank"
+                    title="링크를 클릭해보세요.">https://july249.tistory.com/</a>
+                </li>
+                <li class="channels-link">
+                  <strong><i class="fab fa-github"></i>GitHub</strong><br />
+                  <a href="https://github.com/July249" target="_blank" title="링크를 클릭해보세요.">
+                    https://github.com/July249
+                  </a>
+                </li>
+                <li class="channels-link">
+                  <strong><i class="fa-brands fa-linkedin"></i>LinkedIn</strong><br />
+                  <a href="https://www.linkedin.com/in/jihyung-lee-871a09150/" target="_blank" title="아이콘을 클릭해보세요.">
+                    https://www.linkedin.com/in/jihyung-lee/
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- About -->
-        <section id="about" class="section">
-          <h2 class="sub-tit">📢 About Me</h2>
-          <div class="container">
-            <h3 class="greeting">
-              안녕하세요~👋 "주니어 프론트엔드 개발자" 이지형 입니다!
-            </h3>
-            <ul class="desc-items">
+      <!-- About -->
+      <section id="about" class="section">
+        <h2 class="sub-tit">📢 About Me</h2>
+        <div class="container">
+          <h3 class="greeting">
+            안녕하세요~👋 "주니어 프론트엔드 개발자" 이지형 입니다!
+          </h3>
+          <ul class="desc-items">
+            <li>
+              <p>
+                <strong>지식 공유를 통한 성장을 좋아합니다.</strong><br />
+                지식 공유를 통하여 제 지식을 더 풍요롭게 할 수 있고, 스스로의
+                메타인지 향상을 기할 수 있기 때문입니다. 이러한 학습 방향을
+                지향하기에 대학 재학시절
+                <span class="highlight">교육 봉사활동을 87시간</span>을
+                하였고, 교내 전공 교과 학습 지도 프로그램을 통해
+                <span class="highlight">3년간 멘토로 활동</span>하였습니다.
+                현재는<span class="highlight">블로그 작성, MDN 번역 활동 등을 통하여 개발 지식 정보 공유
+                  활동을 진행</span>하고 있습니다.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>꾸준한 성장을 추구합니다.</strong><br />
+                일회성이 아닌 꾸준함으로 성장하고 있습니다.
+                <span class="highlight">1일 1커밋</span>을 목표로 꾸준한
+                GitHub 관리를 진행하고 있으며, "자스 한스푼" 시리즈를 블로그에
+                연재하며 개발자로서 볼륨을 키워 나가고 있습니다.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>패턴화를 통해 가장 효율적인 방법으로 성장합니다.</strong><br />
+                경험을 통해 반복과 규칙성을 찾아내는 것을 잘 합니다. 이를 통해
+                업무의 패턴을 빠르게 파악하고 가장 효율적인 방법을 찾아 성장의
+                방법으로 사용합니다. 한 예로 이전 스타트업 회사에서 맡은 첫
+                GDN 광고에서 반복적인 노출 키워드를 조사하여 가장 효율적인
+                광고 방법 키워드를 찾아
+                <span class="highlight">3개월</span>동안 총 240만원을 사용하여
+                <span class="highlight">최대 하루 클릭수</span>를 223회에서
+                3,240회로 <span class="highlight">약 14배 성장</span>시켰으며,
+                이를 통해 많은 웹서비스 유입자를 확보하여 회사를 성장시킨
+                경험이 있습니다.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <h2 class="sub-tit">🖼️ Projects</h2>
+        <div class="container">
+          <div class="project-unit">
+            <div class="project-id">
+              <h3 class="project-tit">애니멀톡</h3>
+              <p class="solo_or_team">팀 프로젝트</p>
+              <a class="project-link" href="https://github.com/July249/AnimalTalk" target="_blank" title="링크">자세히 보기</a>
+              <p class="project-period">
+                <time datetime="2022-12-03">2022.12.03</time> ~
+                <time datetime=""></time>
+              </p>
+            </div>
+            <div class="project-used-skills">
+              <p>React</p>
+              <p>TailwindCSS</p>
+            </div>
+            <ul class="project-details">
               <li>
                 <p>
-                  <strong>지식 공유를 통한 성장을 좋아합니다.</strong><br />
-                  지식 공유를 통하여 제 지식을 더 풍요롭게 할 수 있고, 스스로의
-                  메타인지 향상을 기할 수 있기 때문입니다. 이러한 학습 방향을
-                  지향하기에 대학 재학시절
-                  <span class="highlight">교육 봉사활동을 87시간</span>을
-                  하였고, 교내 전공 교과 학습 지도 프로그램을 통해
-                  <span class="highlight">3년간 멘토로 활동</span>하였습니다.
-                  현재는<span class="highlight"
-                    >블로그 작성, MDN 번역 활동 등을 통하여 개발 지식 정보 공유
-                    활동을 진행</span
-                  >하고 있습니다.
+                  React Context API를 이용하여 사용자 정보에 대한 상태관리를
+                  진행하였습니다.
                 </p>
               </li>
               <li>
                 <p>
-                  <strong>꾸준한 성장을 추구합니다.</strong><br />
-                  일회성이 아닌 꾸준함으로 성장하고 있습니다.
-                  <span class="highlight">1일 1커밋</span>을 목표로 꾸준한
-                  GitHub 관리를 진행하고 있으며, "자스 한스푼" 시리즈를 블로그에
-                  연재하며 개발자로서 볼륨을 키워 나가고 있습니다.
+                  커스텀 훅을 이용하여 로그인 사용자에 대한 validation을
+                  간소화하였습니다.
                 </p>
               </li>
               <li>
                 <p>
-                  <strong
-                    >패턴화를 통해 가장 효율적인 방법으로 성장합니다.</strong
-                  ><br />
-                  경험을 통해 반복과 규칙성을 찾아내는 것을 잘 합니다. 이를 통해
-                  업무의 패턴을 빠르게 파악하고 가장 효율적인 방법을 찾아 성장의
-                  방법으로 사용합니다. 한 예로 이전 스타트업 회사에서 맡은 첫
-                  GDN 광고에서 반복적인 노출 키워드를 조사하여 가장 효율적인
-                  광고 방법 키워드를 찾아
-                  <span class="highlight">3개월</span>동안 총 240만원을 사용하여
-                  <span class="highlight">최대 하루 클릭수</span>를 223회에서
-                  3,240회로 <span class="highlight">약 14배 성장</span>시켰으며,
-                  이를 통해 많은 웹서비스 유입자를 확보하여 회사를 성장시킨
-                  경험이 있습니다.
+                  사용자의 자동 로그인을 위해 JWT를 session storage에 담아
+                  관리하였습니다.
+                </p>
+              </li>
+              <li>
+                <p>
+                  공통 스타일을 관리하기 위하여 style.js를 이용하여 중복되는
+                  스타일을 한 곳에 모아 관리하였습니다.
+                </p>
+              </li>
+              <li>
+                <p>
+                  사용되는 이미지 사용의 용이성을 위하여 public 폴더에 담아
+                  process.env.PUBLIC_URL을 통한 경로 참조 방식을
+                  사용하였습니다.
                 </p>
               </li>
             </ul>
           </div>
-        </section>
 
-        <!-- Projects -->
-        <section id="projects" class="section">
-          <h2 class="sub-tit">🖼️ Projects</h2>
-          <div class="container">
-            <div class="project-unit">
-              <div class="project-id">
-                <h3 class="project-tit">애니멀톡</h3>
-                <p class="solo_or_team">팀 프로젝트</p>
-                <a
-                  class="project-link"
-                  href="https://github.com/July249/AnimalTalk"
-                  target="_blank"
-                  title="링크"
-                  >자세히 보기</a
-                >
-                <p class="project-period">
-                  <time datetime="2022-12-03">2022.12.03</time> ~
-                  <time datetime=""></time>
-                </p>
-              </div>
-              <div class="project-used-skills">
-                <p>React</p>
-                <p>TailwindCSS</p>
-              </div>
-              <ul class="project-details">
-                <li>
-                  <p>
-                    React Context API를 이용하여 사용자 정보에 대한 상태관리를
-                    진행하였습니다.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    커스텀 훅을 이용하여 로그인 사용자에 대한 validation을
-                    간소화하였습니다.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    사용자의 자동 로그인을 위해 JWT를 session storage에 담아
-                    관리하였습니다.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    공통 스타일을 관리하기 위하여 style.js를 이용하여 중복되는
-                    스타일을 한 곳에 모아 관리하였습니다.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    사용되는 이미지 사용의 용이성을 위하여 public 폴더에 담아
-                    process.env.PUBLIC_URL을 통한 경로 참조 방식을
-                    사용하였습니다.
-                  </p>
-                </li>
-              </ul>
+          <div class="underline"></div>
+
+          <div class="project-unit">
+            <div class="project-id">
+              <h3 class="project-tit">오픈 마켓 서비스</h3>
+              <p class="solo_or_team">개인 프로젝트</p>
+              <a class="project-link" href="https://github.com/July249" target="_blank" title="링크">자세히 보기</a>
+              <p class="project-period">
+                <time datetime="2022-11-23">2022.11.23</time> ~
+                <time datetime=""></time>
+              </p>
+            </div>
+            <div class="project-used-skills">
+              <p>React</p>
+              <p>Styled Components</p>
             </div>
 
-            <div class="underline"></div>
-
-            <div class="project-unit">
-              <div class="project-id">
-                <h3 class="project-tit">오픈 마켓 서비스</h3>
-                <p class="solo_or_team">개인 프로젝트</p>
-                <a
-                  class="project-link"
-                  href="https://github.com/July249"
-                  target="_blank"
-                  title="링크"
-                  >자세히 보기</a
-                >
-                <p class="project-period">
-                  <time datetime="2022-11-23">2022.11.23</time> ~
-                  <time datetime=""></time>
+            <ul class="project-details">
+              <li>
+                <p>React와 스타일컴포넌트를 이용하여 쇼핑몰 페이지 구현</p>
+              </li>
+              <li>
+                <p>
+                  useContext를 이용하여 상태관리를 진행, 추후 상품 목록을
+                  추가하여 Redux로 리펙토링 예정
                 </p>
-              </div>
-              <div class="project-used-skills">
-                <p>React</p>
-                <p>Styled Components</p>
-              </div>
+              </li>
+              <li>
+                <p>
+                  한번에 많은 데이터를 불러와 CSR 과정에서 발생할 수 있는
+                  delay 문제를 제거하기 위해 스크롤 이벤트가 발생하기 이전에는
+                  추가 데이터 로딩을 진행하지 않도록 하였습니다.
+                </p>
+              </li>
+            </ul>
+          </div>
 
-              <ul class="project-details">
-                <li>
-                  <p>React와 스타일컴포넌트를 이용하여 쇼핑몰 페이지 구현</p>
-                </li>
-                <li>
-                  <p>
-                    useContext를 이용하여 상태관리를 진행, 추후 상품 목록을
-                    추가하여 Redux로 리펙토링 예정
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    한번에 많은 데이터를 불러와 CSR 과정에서 발생할 수 있는
-                    delay 문제를 제거하기 위해 스크롤 이벤트가 발생하기 이전에는
-                    추가 데이터 로딩을 진행하지 않도록 하였습니다.
-                  </p>
-                </li>
-              </ul>
+          <div class="underline"></div>
+
+          <div class="project-unit">
+            <div class="project-id">
+              <h3 class="project-tit">일정 알리미</h3>
+              <p class="solo_or_team">개인 프로젝트</p>
+              <a class="project-link" href="https://github.com/July249/todo-app" target="_blank" title="GitHub Link">자세히
+                보기</a>
+              <p class="project-period">
+                <time datetime="2022-11-30">2022.11.19</time> ~
+                <time datetime="2022-12-30">2022.12.30</time>
+              </p>
+            </div>
+            <div class="project-used-skills">
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JavaScript</p>
+            </div>
+            <ul class="project-details">
+              <li>
+                <p>
+                  달력을 이용하여 일정을 추가하여 일정을 관리할 수 있는
+                  웹앱입니다.
+                </p>
+              </li>
+              <li>
+                <p>
+                  일정 정보를 입력하면 일자를 key로 가지도록 하여
+                  로컬스토리지에 데이터를 저장
+                </p>
+              </li>
+              <li>
+                <p>
+                  일자를 선택하면 모달 창에서 저장된 일정을 확인할 수
+                  있습니다.
+                </p>
+              </li>
+              <li>
+                <p>달력의 하단에는 오늘의 일정이 나타나게 됩니다.</p>
+              </li>
+              <li>
+                <p>
+                  설정한 일정 하루 전에 사용자의 이메일로 할 일의 목록을
+                  발송해주는 기능을 구현하였습니다.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="underline"></div>
+
+          <div class="project-unit">
+            <div class="project-id">
+              <h3 class="project-tit">타이머</h3>
+              <p class="solo_or_team">개인 프로젝트</p>
+              <a class="project-link" href="https://github.com/July249/time-timer" target="_blank"
+                title="GitHub Link">자세히 보기</a>
+              <p class="project-period">
+                <time datetime="2022-11-30">2022.11.30</time> ~
+                <time datetime=""></time>
+              </p>
+            </div>
+            <div class="project-used-skills">
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JavaScript</p>
+              <p>React</p>
+            </div>
+            <ul class="project-details">
+              <li>
+                <p>기본적인 카운트다운 기능을 가진 타이머 입니다.</p>
+              </li>
+              <li>
+                <p>
+                  하나의 함수에서 다양한 기능을 수행하여 관리의 어려움이
+                  있었습니다. 이를 해결하기 위한 방법으로 단일책임의
+                  원칙(SRP)을 차용하였습니다.
+                </p>
+              </li>
+              <li>
+                <p>
+                  이를 통해 각 변수와 함수를 클래스로 변경하여 리펙토링을
+                  진행한 결과 코드의 재사용성과 가독성을 향상시키고,
+                  유지보수의 용이성을 가지게 되었습니다.
+                </p>
+              </li>
+              <li>
+                <p>
+                  타이머와 같은 간단한 기능을 가진 위젯의 경우 SRP의 방법론을
+                  차용하는 것이 용이하였으나, 복잡도가 높은 (하나의 이벤트에서
+                  처리해야할 기능이 많아지는) 경우에는 SRP 방법론의 적용이
+                  어려울 수 있음을 고려해야함을 알게 되었습니다.
+                </p>
+              </li>
+              <li>
+                <p>
+                  바닐라 자바스크립트로 구현한 이 프로젝트를 리액트로 변경하여
+                  함수형 컴포넌트의 상태관리가 주는 편의성을 확인하고자
+                  합니다.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="underline"></div>
+
+          <div class="project-unit">
+            <div class="project-id">
+              <h3 class="project-tit">가나다라영화사</h3>
+              <p class="solo_or_team">팀 프로젝트</p>
+              <a class="project-link" href="https://github.com/Already-12-O-clock/ABCDmoviE" target="_blank"
+                title="GitHub Link">자세히 보기</a>
+              <p class="project-period">
+                <time datetime="2022-11-07">2022.11.07</time> ~
+                <time datetime=""></time>
+              </p>
+            </div>
+            <div class="project-used-skills">
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>Sass</p>
+              <p>JavaScript</p>
+            </div>
+            <ul class="project-details">
+              <li>
+                <p>
+                  한국영화진흥위원회, 한국영화데이터베이스, 네이버 openAPI
+                  영화정보를 이용한 영화정보 확인 및 영화 예매 사이트입니다.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="https://gist.github.com/stephenparish/9941e89d80e2bc58a153"
+                    style="text-decoration: underline; color: blue">AngluarJS commit conventions</a>를 차용하여 깃플로우 방식으로
+                  프로젝트 커밋 및 PR 관리를
+                  진행하였습니다.
+                </p>
+              </li>
+              <li>
+                <p>
+                  한국영화진흥위원회, 한국영화데이터베이스, 네이버 openAPI에
+                  필요한 영화정보 데이터를 요청하고 이에 대한 응답 데이터를
+                  가져와 사용자에게 보여지는 기능을 구현하였습니다.
+                </p>
+              </li>
+              <li>
+                <p>
+                  한국영화진흥위원회, 한국영화데이터베이스에서 제공하는 API 중
+                  사용자의 요청 내용만을 받아와 API 요청을 쉽게 이용할 수 있는
+                  클래스를 구현하였습니다. 이를 위해 사용자 요청 사항을
+                  로컬스토리지에 저장하는 방식을 사용하였습니다.
+                </p>
+              </li>
+              <li>
+                <p>
+                  네이버 openAPI는 브라우저 환경에서 데이터를 요청하는 fetch
+                  방식의 요청을 허용하지 않는 문제점이 있었습니다. 이를
+                  해결하기 위해 노드환경에서 request 모듈을 사용하였습니다.
+                  request 모듈을 통해 가져온 데이터를 json 파일로 저장한 뒤,
+                  해당 json 파일에 fetch로 접근하는 간접적인 방식을 차용하려고
+                  하였지만, API 접근 정보를 은닉하는 과정과 노드환경을
+                  브라우저 환경과 일치시키는 과정에서 문제가 발생하였습니다.
+                  위 문제를 해결하기 위해 웹팩을 활용한 API 접근정보 은닉화 및
+                  프록시를 이용한 접근을 고려하여 문제를 해결하였습니다.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <h2 class="sub-tit">🎨 Skills</h2>
+        <div class="container">
+          <div class="dev-skills">
+            <h3 class="dev-skill">Dev. Skills</h3>
+            <div class="dev-skill-items">
+              <button class="skill-btn" type="button">
+                <img src="./src/assets/img/skills/dev_skill/html.svg" alt="" />HTML
+              </button>
+              <button class="skill-btn" type="button">
+                <img src="./src/assets/img/skills/dev_skill/css.svg" alt="" />CSS
+              </button>
+              <button class="skill-btn" type="button">
+                <img src="./src/assets/img/skills/dev_skill/sass.svg" alt="" />Sass
+              </button>
+              <button class="skill-btn" type="button">
+                <img src="./src/assets/img/skills/dev_skill/tailwindcss.svg" alt="" />TailwindCSS
+              </button>
+              <button class="skill-btn" type="button">
+                <img src="./src/assets/img/skills/dev_skill/javascript.svg" alt="" />JavaScript
+              </button>
+              <button class="skill-btn" type="button">
+                <img src="./src/assets/img/skills/dev_skill/jquery.svg" alt="" />jQuery
+              </button>
+              <button class="skill-btn" type="button">
+                <img src="./src/assets/img/skills/dev_skill/bootstrap.svg" alt="" />Bootstrap
+              </button>
+              <button class="skill-btn" type="button">
+                <img src="./src/assets/img/skills/dev_skill/react.svg" alt="" />React
+              </button>
+              <button class="skill-btn" type="button">
+                <img src="./src/assets/img/skills/dev_skill/vuejs.svg" alt="" />Vue
+              </button>
+              <button class="skill-btn" type="button">
+                <img src="./src/assets/img/skills/dev_skill/redux.svg" alt="" />Redux
+              </button>
+              <button class="skill-btn" type="button">
+                <img src="./src/assets/img/skills/dev_skill/nodejs.svg" alt="" />Node.js
+              </button>
+              <button class="skill-btn" type="button">
+                <img src="./src/assets/img/skills/dev_skill/firebase.svg" alt="" />Firebase
+              </button>
+            </div>
+          </div>
+
+          <div class="underline"></div>
+
+          <div class="dev-etcs">
+            <h3 class="dev-etc">Dev. etc.</h3>
+            <div class="dev-etc-items">
+              <button class="etc-btn" type="button">
+                <img src="./src/assets/img/skills/dev_env/git.svg" alt="" />git
+              </button>
+              <button class="etc-btn" type="button">
+                <img src="./src/assets/img/skills/dev_env/github.svg" alt="" />GitHub
+              </button>
+              <button class="etc-btn" type="button">
+                <img src="./src/assets/img/skills/dev_env/mongodb.svg" alt="" />MongoDB
+              </button>
+              <button class="etc-btn" type="button">
+                <img src="./src/assets/img/skills/dev_env/npm.svg" alt="" />NPM
+              </button>
+              <button class="etc-btn" type="button">
+                <img src="./src/assets/img/skills/dev_env/vscode.svg" alt="" />VSCode
+              </button>
+              <button class="etc-btn" type="button">
+                <img src="./src/assets/img/skills/dev_ops/discord.svg" alt="" />Discord
+              </button>
+              <button class="etc-btn" type="button">
+                <img src="./src/assets/img/skills/dev_ops/notion.svg" alt="" />Notion
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Other Experience -->
+      <section id="other-experience" class="section">
+        <h2 class="sub-tit">👨‍💻 Other Experience</h2>
+        <div class="container">
+          <div class="other-experience-unit">
+            <div class="other-experience-id">
+              <h3 class="other-experience-tit">MDN 오픈소스 기여 활동</h3>
+              <a class="other-experience-link" href="https://github.com/mdn/translated-content/labels/l10n-ko"
+                target="_blank" title="링크">자세히 보기</a>
+              <p class="other-experience-period">
+                <time datetime="2022-12-03">2022.10.29</time> ~
+                <time datetime=""></time>
+              </p>
+            </div>
+            <ul class="other-experience-details">
+              <li>
+                <p>
+                  <a href="https://github.com/mdn/translated-content/pull/9569"
+                    style="color: #73aace; text-decoration: underline">display-box none</a>
+                  번역 작업 진행 (2022.10.29)
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="https://github.com/mdn/translated-content/pull/10119"
+                    style="color: #73aace; text-decoration: underline">aria-label</a>
+                  번역 작업 진행 (2022.11.24)
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="underline"></div>
+
+          <div class="other-experience-unit">
+            <div class="other-experience-id">
+              <h3 class="other-experience-tit">React, Hook 들어오네!?</h3>
+              <p class="other-experience-period">
+                <time datetime="2022-12-03">2022.12.03</time> ~
+                <time datetime="2023-02-28">2023.01.31</time>
+              </p>
             </div>
 
-            <div class="underline"></div>
-
-            <div class="project-unit">
-              <div class="project-id">
-                <h3 class="project-tit">일정 알리미</h3>
-                <p class="solo_or_team">개인 프로젝트</p>
-                <a
-                  class="project-link"
-                  href="https://github.com/July249/todo-app"
-                  target="_blank"
-                  title="GitHub Link"
-                  >자세히 보기</a
-                >
-                <p class="project-period">
-                  <time datetime="2022-11-30">2022.11.19</time> ~
-                  <time datetime="2022-12-30">2022.12.30</time>
+            <ul class="other-experience-details">
+              <li>
+                <p>
+                  React Hook을 보다 쉽게 접할 수 있도록 하기 위한 공동 집필
+                  과정에 참여하였습니다.
                 </p>
-              </div>
-              <div class="project-used-skills">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
-              </div>
-              <ul class="project-details">
-                <li>
-                  <p>
-                    달력을 이용하여 일정을 추가하여 일정을 관리할 수 있는
-                    웹앱입니다.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    일정 정보를 입력하면 일자를 key로 가지도록 하여
-                    로컬스토리지에 데이터를 저장
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    일자를 선택하면 모달 창에서 저장된 일정을 확인할 수
-                    있습니다.
-                  </p>
-                </li>
-                <li>
-                  <p>달력의 하단에는 오늘의 일정이 나타나게 됩니다.</p>
-                </li>
-                <li>
-                  <p>
-                    설정한 일정 하루 전에 사용자의 이메일로 할 일의 목록을
-                    발송해주는 기능을 제공할 예정입니다.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    데이터를 입력한지 12시간이 지나면 로컬스토리지에 저장된
-                    데이터를 JSON 파일에 저장한 뒤, 로컬스토리지에 저장된
-                    데이터를 제거하는 기능을 추가할 예정입니다.
-                  </p>
-                </li>
-              </ul>
+              </li>
+              <li>
+                <p>
+                  useEffect, useReducer, useDeferredValue 집필을
+                  진행하였습니다.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="underline"></div>
+
+          <div class="other-experience-unit">
+            <div class="other-experience-id">
+              <h3 class="other-experience-tit">
+                WEB SQL 오픈소스 사이트 개발
+              </h3>
+              <a class="other-experience-link" href="https://github.com/websqldb/SQooL" target="_blank" title="">자세히
+                보기</a>
+              <p class="other-experience-period">
+                <time datetime="2022-11-20">2022.11.20</time> ~
+                <time datetime="2023-02-28">2023.02.28</time>
+              </p>
             </div>
 
-            <div class="underline"></div>
-
-            <div class="project-unit">
-              <div class="project-id">
-                <h3 class="project-tit">타이머</h3>
-                <p class="solo_or_team">개인 프로젝트</p>
-                <a
-                  class="project-link"
-                  href="https://github.com/July249/time-timer"
-                  target="_blank"
-                  title="GitHub Link"
-                  >자세히 보기</a
-                >
-                <p class="project-period">
-                  <time datetime="2022-11-30">2022.11.30</time> ~
-                  <time datetime=""></time>
+            <ul class="other-experience-details">
+              <li>
+                <p>
+                  별도의 설치 작업 없이 쉽게 웹에서 실행 가능한 SQL 튜토리얼
+                  사이트 제작에 참여하였습니다.
                 </p>
-              </div>
-              <div class="project-used-skills">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
-                <p>React</p>
-              </div>
-              <ul class="project-details">
-                <li>
-                  <p>기본적인 카운트다운 기능을 가진 타이머 입니다.</p>
-                </li>
-                <li>
-                  <p>
-                    하나의 함수에서 다양한 기능을 수행하여 관리의 어려움이
-                    있었습니다. 이를 해결하기 위한 방법으로 단일책임의
-                    원칙(SRP)을 차용하였습니다.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    이를 통해 각 변수와 함수를 클래스로 변경하여 리펙토링을
-                    진행한 결과 코드의 재사용성과 가독성을 향상시키고,
-                    유지보수의 용이성을 가지게 되었습니다.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    타이머와 같은 간단한 기능을 가진 위젯의 경우 SRP의 방법론을
-                    차용하는 것이 용이하였으나, 복잡도가 높은 (하나의 이벤트에서
-                    처리해야할 기능이 많아지는) 경우에는 SRP 방법론의 적용이
-                    어려울 수 있음을 고려해야함을 알게 되었습니다.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    바닐라 자바스크립트로 구현한 이 프로젝트를 리액트로 변경하여
-                    함수형 컴포넌트의 상태관리가 주는 편의성을 확인하고자
-                    합니다.
-                  </p>
-                </li>
-              </ul>
+              </li>
+              <li>
+                <p>
+                  메인 페이지에서 사용자가 select 요소 내 option 요소 선택시 자동으로 입력 에디터가 완성되도록 하는 자바스크립트 기능 구현 작업, 웹에서
+                  사용되는 데이터 생성 작업에 참여하였습니다.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="underline"></div>
+
+          <div class="other-experience-unit">
+            <div class="other-experience-id">
+              <h3 class="other-experience-tit">
+                스자일(코어자바스크립트 북스터디)
+              </h3>
+              <a class="other-experience-link" href="https://www.notion.so/likelion/1667021132e84c10bd4ddbf4263d3b95"
+                target="_blank" title="스자일 노션페이지 링크">자세히 보기</a>
+              <p class="other-experience-period">
+                <time datetime="2022-09-19">2022.09.19</time> ~
+                <time datetime="2022-10-04">2022.10.04</time>
+              </p>
             </div>
 
-            <div class="underline"></div>
+            <ul class="other-experience-details">
+              <li>
+                <p>
+                  코어자바스크립트 교재를 학습하여 버전에 관계 없이
+                  자바스크립트를 관통하는 부분에 대한 학습을 진행하는
+                  북스터디입니다.
+                </p>
+              </li>
+              <li>
+                <p>
+                  해당 북스터디에서 엑셀 데이터를 관리하는 역할을
+                  담당하였습니다.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-            <div class="project-unit">
-              <div class="project-id">
-                <h3 class="project-tit">가나다라영화사</h3>
-                <p class="solo_or_team">팀 프로젝트</p>
-                <a
-                  class="project-link"
-                  href="https://github.com/Already-12-O-clock/ABCDmoviE"
-                  target="_blank"
-                  title="GitHub Link"
-                  >자세히 보기</a
-                >
-                <p class="project-period">
-                  <time datetime="2022-11-07">2022.11.07</time> ~
-                  <time datetime=""></time>
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <h2 class="sub-tit">💼 Work Experience</h2>
+        <div class="container">
+          <div class="experience-unit">
+            <div class="experience-intro">
+              <div class="job-id">
+                <h3 class="job-company">(주) 이지일렉트릭</h3>
+                <p class="job-period">
+                  <time datetime="2021-06-01">2021.06.01</time> ~<br />
+                  <time datetime="2021-11-30">2021.11.30</time>
                 </p>
               </div>
-              <div class="project-used-skills">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Sass</p>
-                <p>JavaScript</p>
-              </div>
-              <ul class="project-details">
+              <p class="job-major">기업 부설 연구소장</p>
+              <p class="job-major">경영전략팀장</p>
+              <p class="job-major">콘텐츠제작팀원</p>
+            </div>
+            <div class="job-desc">
+              <h3 class="job-role">👨‍💻 업무 경험</h3>
+              <ul class="job-details">
                 <li>
-                  <p>
-                    한국영화진흥위원회, 한국영화데이터베이스, 네이버 openAPI
-                    영화정보를 이용한 영화정보 확인 및 영화 예매 사이트입니다.
-                  </p>
+                  <p>LaTeX를 이용한 웹서비스 상품 서비스 콘텐츠 제작</p>
                 </li>
                 <li>
-                  <p>
-                    <a
-                      href="https://gist.github.com/stephenparish/9941e89d80e2bc58a153"
-                      style="text-decoration: underline; color: blue"
-                      >AngluarJS commit conventions</a
-                    >를 차용하여 깃플로우 방식으로 프로젝트 커밋 및 PR 관리를
-                    진행하였습니다.
-                  </p>
+                  <p>GDN을 활용한 홍보 및 마케팅 담당 업무</p>
                 </li>
                 <li>
-                  <p>
-                    한국영화진흥위원회, 한국영화데이터베이스, 네이버 openAPI에
-                    필요한 영화정보 데이터를 요청하고 이에 대한 응답 데이터를
-                    가져와 사용자에게 보여지는 기능을 구현하였습니다.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    한국영화진흥위원회, 한국영화데이터베이스에서 제공하는 API 중
-                    사용자의 요청 내용만을 받아와 API 요청을 쉽게 이용할 수 있는
-                    클래스를 구현하였습니다. 이를 위해 사용자 요청 사항을
-                    로컬스토리지에 저장하는 방식을 사용하였습니다.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    네이버 openAPI는 브라우저 환경에서 데이터를 요청하는 fetch
-                    방식의 요청을 허용하지 않는 문제점이 있었습니다. 이를
-                    해결하기 위해 노드환경에서 request 모듈을 사용하였습니다.
-                    request 모듈을 통해 가져온 데이터를 json 파일로 저장한 뒤,
-                    해당 json 파일에 fetch로 접근하는 간접적인 방식을 차용하려고
-                    하였지만, API 접근 정보를 은닉하는 과정과 노드환경을
-                    브라우저 환경과 일치시키는 과정에서 문제가 발생하였습니다.
-                    위 문제를 해결하기 위해 웹팩을 활용한 API 접근정보 은닉화 및
-                    프록시를 이용한 접근을 고려하여 문제를 해결하였습니다.
-                  </p>
+                  <div>
+                    국가지원사업 관리 담당 업무<br />
+                    <p>- 콘텐츠진흥원 주관 창업발전소 업무 총괄</p>
+                    <p>- e나라도움 업무 진행</p>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Skills -->
-        <section id="skills" class="section">
-          <h2 class="sub-tit">🎨 Skills</h2>
-          <div class="container">
-            <div class="dev-skills">
-              <h3 class="dev-skill">Dev. Skills</h3>
-              <div class="dev-skill-items">
-                <button class="skill-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_skill/html.svg"
-                    alt=""
-                  />HTML
-                </button>
-                <button class="skill-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_skill/css.svg"
-                    alt=""
-                  />CSS
-                </button>
-                <button class="skill-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_skill/sass.svg"
-                    alt=""
-                  />Sass
-                </button>
-                <button class="skill-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_skill/tailwindcss.svg"
-                    alt=""
-                  />TailwindCSS
-                </button>
-                <button class="skill-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_skill/javascript.svg"
-                    alt=""
-                  />JavaScript
-                </button>
-                <button class="skill-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_skill/jquery.svg"
-                    alt=""
-                  />jQuery
-                </button>
-                <button class="skill-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_skill/bootstrap.svg"
-                    alt=""
-                  />Bootstrap
-                </button>
-                <button class="skill-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_skill/react.svg"
-                    alt=""
-                  />React
-                </button>
-                <button class="skill-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_skill/vuejs.svg"
-                    alt=""
-                  />Vue
-                </button>
-                <button class="skill-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_skill/redux.svg"
-                    alt=""
-                  />Redux
-                </button>
-                <button class="skill-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_skill/nodejs.svg"
-                    alt=""
-                  />Node.js
-                </button>
-                <button class="skill-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_skill/firebase.svg"
-                    alt=""
-                  />Firebase
-                </button>
-              </div>
+      <!-- Education -->
+      <section id="education" class="section">
+        <h2 class="sub-tit">👨‍💻 Education</h2>
+        <div class="container">
+          <div class="education-unit">
+            <div class="education-id">
+              <h3 class="education-tit">
+                멋쟁이사자처럼 프론트엔드 스쿨 3기
+              </h3>
+              <p class="education-period">
+                <time datetime="2022-08-29">2022.08.29</time> ~
+                <time datetime="2023-01-06">2023.01.06</time>
+              </p>
             </div>
-
-            <div class="underline"></div>
-
-            <div class="dev-etcs">
-              <h3 class="dev-etc">Dev. etc.</h3>
-              <div class="dev-etc-items">
-                <button class="etc-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_env/git.svg"
-                    alt=""
-                  />git
-                </button>
-                <button class="etc-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_env/github.svg"
-                    alt=""
-                  />GitHub
-                </button>
-                <button class="etc-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_env/mongodb.svg"
-                    alt=""
-                  />MongoDB
-                </button>
-                <button class="etc-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_env/npm.svg"
-                    alt=""
-                  />NPM
-                </button>
-                <button class="etc-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_env/vscode.svg"
-                    alt=""
-                  />VSCode
-                </button>
-                <button class="etc-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_ops/discord.svg"
-                    alt=""
-                  />Discord
-                </button>
-                <button class="etc-btn" type="button">
-                  <img
-                    src="./src/assets/img/skills/dev_ops/notion.svg"
-                    alt=""
-                  />Notion
-                </button>
-              </div>
-            </div>
+            <ul class="education-details">
+              <li>
+                <p>
+                  웹 접근성을 고려한 HTML 마크업 방법, 유연한 스타일링을 위한
+                  CSS 및 기타 라이브러리(Sass, TailwindCSS) 학습
+                </p>
+              </li>
+              <li>
+                <p>
+                  견고한 JavaScript 기본기 학습 및 이를 바탕으로 한 React 학습
+                </p>
+              </li>
+              <li>
+                <p>
+                  주기적인 회고 활동 및 프로젝트를 통한 적극적인 의사소통과
+                  소프트 스킬 향상
+                </p>
+              </li>
+            </ul>
           </div>
-        </section>
 
-        <!-- Other Experience -->
-        <section id="other-experience" class="section">
-          <h2 class="sub-tit">👨‍💻 Other Experience</h2>
-          <div class="container">
-            <div class="other-experience-unit">
-              <div class="other-experience-id">
-                <h3 class="other-experience-tit">MDN 오픈소스 기여 활동</h3>
-                <a
-                  class="other-experience-link"
-                  href="https://github.com/mdn/translated-content/labels/l10n-ko"
-                  target="_blank"
-                  title="링크"
-                  >자세히 보기</a
-                >
-                <p class="other-experience-period">
-                  <time datetime="2022-12-03">2022.10.29</time> ~
-                  <time datetime=""></time>
-                </p>
-              </div>
-              <ul class="other-experience-details">
-                <li>
-                  <p>
-                    <a
-                      href="https://github.com/mdn/translated-content/pull/9569"
-                      style="color: #73aace; text-decoration: underline"
-                      >display-box none</a
-                    >
-                    번역 작업 진행 (2022.10.29)
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <a
-                      href="https://github.com/mdn/translated-content/pull/10119"
-                      style="color: #73aace; text-decoration: underline"
-                      >aria-label</a
-                    >
-                    번역 작업 진행 (2022.11.24)
-                  </p>
-                </li>
-              </ul>
+          <div class="underline"></div>
+
+          <div class="education-unit">
+            <div class="education-id">
+              <h3 class="education-tit">
+                가톨릭대학교 물리학과 석사과정 (중퇴)
+              </h3>
+              <p class="education-period">
+                <time datetime="2020-08-31">2020.08.31</time> ~
+                <time datetime="2021-02-28">2021.02.28</time>
+              </p>
             </div>
-
-            <div class="underline"></div>
-
-            <div class="other-experience-unit">
-              <div class="other-experience-id">
-                <h3 class="other-experience-tit">React, Hook 들어오네!?</h3>
-                <p class="other-experience-period">
-                  <time datetime="2022-12-03">2022.12.03</time> ~
-                  <time datetime="2023-02-28">2023.01.31</time>
+            <ul class="education-details">
+              <li>
+                <p>
+                  지도교수:
+                  <a
+                    href="https://physics.catholic.ac.kr/front/profintroview.do?cmsDirPkid=776&cmsLocalPkid=0&rSiteGubun=39&menuLang=K&searchSustCd=M230000354&searchPosiFg=10&searchPersNo=210817796">Mark
+                    Ancliff</a>
                 </p>
-              </div>
-
-              <ul class="other-experience-details">
-                <li>
-                  <p>
-                    React Hook을 보다 쉽게 접할 수 있도록 하기 위한 공동 집필
-                    과정에 참여하였습니다.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    useEffect, useReducer, useDeferredValue 집필을
-                    진행하였습니다.
-                  </p>
-                </li>
-              </ul>
-            </div>
-
-            <div class="underline"></div>
-
-            <div class="other-experience-unit">
-              <div class="other-experience-id">
-                <h3 class="other-experience-tit">
-                  WEB SQL 오픈소스 사이트 개발
-                </h3>
-                <a
-                  class="other-experience-link"
-                  href="https://github.com/websqldb/SQooL"
-                  target="_blank"
-                  title=""
-                  >자세히 보기</a
-                >
-                <p class="other-experience-period">
-                  <time datetime="2022-12-03">2022.12.03</time> ~
-                  <time datetime="2023-02-28">2023.02.28</time>
+              </li>
+              <li>
+                <p>
+                  연구주제: 대칭군을 이용한 스핀 체인 문제 일반해에 대한
+                  연구<br />
+                  (General Solution about Spin Chain Problem by using
+                  Symmetric Group)
                 </p>
-              </div>
-
-              <ul class="other-experience-details">
-                <li>
-                  <p>
-                    별도의 설치 작업 없이 쉽게 웹에서 실행 가능한 SQL 튜토리얼
-                    사이트 제작에 참여하였습니다.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    데이터 처리 과정의 자바스크립트 기능 구현 작업, 웹에서
-                    사용되는 데이터 생성 작업에 참여하였습니다.
-                  </p>
-                </li>
-              </ul>
-            </div>
-
-            <div class="underline"></div>
-
-            <div class="other-experience-unit">
-              <div class="other-experience-id">
-                <h3 class="other-experience-tit">
-                  스자일(코어자바스크립트 북스터디)
-                </h3>
-                <a
-                  class="other-experience-link"
-                  href="https://www.notion.so/likelion/1667021132e84c10bd4ddbf4263d3b95"
-                  target="_blank"
-                  title="스자일 노션페이지 링크"
-                  >자세히 보기</a
-                >
-                <p class="other-experience-period">
-                  <time datetime="2022-09-19">2022.09.19</time> ~
-                  <time datetime="2022-10-04">2022.10.04</time>
-                </p>
-              </div>
-
-              <ul class="other-experience-details">
-                <li>
-                  <p>
-                    코어자바스크립트 교재를 학습하여 버전에 관계 없이
-                    자바스크립트를 관통하는 부분에 대한 학습을 진행하는
-                    북스터디입니다.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    해당 북스터디에서 엑셀 데이터를 관리하는 역할을
-                    담당하였습니다.
-                  </p>
-                </li>
-              </ul>
-            </div>
+              </li>
+              <li>
+                <p>일반물리학 및 실험 수업 조교(TA)</p>
+              </li>
+            </ul>
           </div>
-        </section>
 
-        <!-- Experience -->
-        <section id="experience" class="section">
-          <h2 class="sub-tit">💼 Work Experience</h2>
-          <div class="container">
-            <div class="experience-unit">
-              <div class="experience-intro">
-                <div class="job-id">
-                  <h3 class="job-company">(주) 이지일렉트릭</h3>
-                  <p class="job-period">
-                    <time datetime="2021-06-01">2021.06.01</time> ~<br />
-                    <time datetime="2021-11-30">2021.11.30</time>
-                  </p>
-                </div>
-                <p class="job-major">기업 부설 연구소장</p>
-                <p class="job-major">경영전략팀장</p>
-                <p class="job-major">콘텐츠제작팀원</p>
-              </div>
-              <div class="job-desc">
-                <h3 class="job-role">👨‍💻 업무 경험</h3>
-                <ul class="job-details">
-                  <li>
-                    <p>LaTeX를 이용한 웹서비스 상품 서비스 콘텐츠 제작</p>
-                  </li>
-                  <li>
-                    <p>GDN을 활용한 홍보 및 마케팅 담당 업무</p>
-                  </li>
-                  <li>
-                    <div>
-                      국가지원사업 관리 담당 업무<br />
-                      <p>- 콘텐츠진흥원 주관 창업발전소 업무 총괄</p>
-                      <p>- e나라도움 업무 진행</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+          <div class="underline"></div>
+
+          <div class="education-unit">
+            <div class="education-id">
+              <h3 class="education-tit">가톨릭대학교 물리학과</h3>
+              <p class="education-period">
+                <time datetime="2011-03-02">2011.03.02</time> ~
+                <time datetime="2017-08-17">2017.08.17</time>
+              </p>
             </div>
+
+            <ul class="education-details">
+              <li>
+                <p>학점: 3.72 / 4.5 (전공학점: 4.14 / 4.5)</p>
+              </li>
+              <li>
+                <p>
+                  기본 4대역학(고전역학, 전자기학, 양자역학, 열역학)과
+                  고체물리학 등의 물리학 전반에 대한 이해
+                </p>
+              </li>
+              <li>
+                <p>
+                  수상: 2014년 학술연구장학대회 장려상<br />
+                  - 학술연구주제: 양자역학에 기반한 양자 암호 통신기술에 대한
+                  논의
+                </p>
+              </li>
+            </ul>
           </div>
-        </section>
+        </div>
+      </section>
+    </main>
 
-        <!-- Education -->
-        <section id="education" class="section">
-          <h2 class="sub-tit">👨‍💻 Education</h2>
-          <div class="container">
-            <div class="education-unit">
-              <div class="education-id">
-                <h3 class="education-tit">
-                  멋쟁이사자처럼 프론트엔드 스쿨 3기
-                </h3>
-                <p class="education-period">
-                  <time datetime="2022-08-29">2022.08.29</time> ~
-                  <time datetime="2023-01-06">2023.01.06</time>
-                </p>
-              </div>
-              <ul class="education-details">
-                <li>
-                  <p>
-                    웹 접근성을 고려한 HTML 마크업 방법, 유연한 스타일링을 위한
-                    CSS 및 기타 라이브러리(Sass, TailwindCSS) 학습
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    견고한 JavaScript 기본기 학습 및 이를 바탕으로 한 React 학습
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    주기적인 회고 활동 및 프로젝트를 통한 적극적인 의사소통과
-                    소프트 스킬 향상
-                  </p>
-                </li>
-              </ul>
-            </div>
+    <div class="underline"></div>
 
-            <div class="underline"></div>
+    <footer id="footer">
+      <p class="rights">&copy 2022 Jihyung Lee - All rights reserved</p>
+    </footer>
+  </article>
+  <button class="up-btn">
+    <i class="fas fa-arrow-up" data-link="#header"></i>
+  </button>
+</body>
 
-            <div class="education-unit">
-              <div class="education-id">
-                <h3 class="education-tit">
-                  가톨릭대학교 물리학과 석사과정 (중퇴)
-                </h3>
-                <p class="education-period">
-                  <time datetime="2020-08-31">2020.08.31</time> ~
-                  <time datetime="2021-02-28">2021.02.28</time>
-                </p>
-              </div>
-              <ul class="education-details">
-                <li>
-                  <p>
-                    지도교수:
-                    <a
-                      href="https://physics.catholic.ac.kr/front/profintroview.do?cmsDirPkid=776&cmsLocalPkid=0&rSiteGubun=39&menuLang=K&searchSustCd=M230000354&searchPosiFg=10&searchPersNo=210817796"
-                      >Mark Ancliff</a
-                    >
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    연구주제: 대칭군을 이용한 스핀 체인 문제 일반해에 대한
-                    연구<br />
-                    (General Solution about Spin Chain Problem by using
-                    Symmetric Group)
-                  </p>
-                </li>
-                <li>
-                  <p>일반물리학 및 실험 수업 조교(TA)</p>
-                </li>
-              </ul>
-            </div>
-
-            <div class="underline"></div>
-
-            <div class="education-unit">
-              <div class="education-id">
-                <h3 class="education-tit">가톨릭대학교 물리학과</h3>
-                <p class="education-period">
-                  <time datetime="2011-03-02">2011.03.02</time> ~
-                  <time datetime="2017-08-17">2017.08.17</time>
-                </p>
-              </div>
-
-              <ul class="education-details">
-                <li>
-                  <p>학점: 3.72 / 4.5 (전공학점: 4.14 / 4.5)</p>
-                </li>
-                <li>
-                  <p>
-                    기본 4대역학(고전역학, 전자기학, 양자역학, 열역학)과
-                    고체물리학 등의 물리학 전반에 대한 이해
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    수상: 2014년 학술연구장학대회 장려상<br />
-                    - 학술연구주제: 양자역학에 기반한 양자 암호 통신기술에 대한
-                    논의
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <div class="underline"></div>
-
-      <footer id="footer">
-        <p class="rights">&copy 2022 Jihyung Lee - All rights reserved</p>
-      </footer>
-    </article>
-    <button class="up-btn">
-      <i class="fas fa-arrow-up" data-link="#header"></i>
-    </button>
-  </body>
 </html>
